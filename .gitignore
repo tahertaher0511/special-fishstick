@@ -1,0 +1,15 @@
+# Exclude local storage and databases (critical for security and clean cloud boots)
+storage/
+
+# Exclude virtual environments
+venv/
+.venv/
+env/
+
+# Python cache and metadata
+__pycache__/
+*.py[cod]
+*$py.class
+
+# macOS system files
+.DS_Store
