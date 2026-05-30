@@ -47,3 +47,4 @@ Streamlit will print the local host URI (usually `http://localhost:8501`). Open 
 - **Single Process Router:** The application uses `st.query_params` to router layouts. Root level requests (`/`) display the **Sender Dashboard**, while requests with a token parameter (`/?share=UUID`) load the secure **Receiver Interface**.
 - **SQLite Database:** Upload metadata (UUIDs, expiration targets, password hashes, download counts) are tracked in a lightweight SQLite database (`storage/shares.db`). No cloud storage, external APIs, or key integrations are required — it is fully self-contained and private.
 - **Safe Purging / Self-Destruct:** Physical files are stored in `storage/uploads/`. The application runs a cleanup cycle during every interaction, identifying expired or revoked files and safely deleting them from the storage disk immediately.
+# aethershare
